@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: #f2faff;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+.cardGrid {
+  padding: 20px 0;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardMedia {
+  padding-top: 56.25%;
+}
+
+.cardContent {
+  flex-grow: 1;
+}
+
+.footer {
+  padding: 50px;
+  background-color: #f2faff;
+}
+
+.app-icon {
+  width: 80px; 
+  height: 80px;
+}
