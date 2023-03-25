@@ -13,7 +13,7 @@ export default function AppToolbar({darkThemeEnabled, onThemeChanged}) {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Material Dynamic Theme
+                        Material You Icons
                     </Typography>
                     <ThemeSwitch 
                         darkThemeEnabled = {darkThemeEnabled}

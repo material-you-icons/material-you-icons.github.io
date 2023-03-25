@@ -10,8 +10,9 @@ import {
   TableBody,
   ThemeProvider,
   createTheme,
+  Link,
+  Stack
 } from '@mui/material';
-import { PhotoCameraOutlined } from '@mui/icons-material';
 import './App.css';
 import { apps } from './applist';
 import { Box } from '@mui/system';
@@ -56,9 +57,18 @@ const App = () => {
               key={app}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row"><Typography variant='title'>{app}</Typography></TableCell>
-              <TableCell><Box component={'img'} className='app-icon' src={`/icons/color/${app}.png`}/></TableCell>
-              <TableCell><Box component={'img'} className='app-icon' src={`/icons/${darkTheme ? 'dark' : 'light'}/${app}.png`}/></TableCell>
+              <TableCell component="th" scope="row">
+                <Stack spacing={1}>
+                  <Typography variant='h6'>{app.name}</Typography>
+                  {app.playstore && 
+                    <Link href={`https://play.google.com/store/apps/details?id=${app.playstore}`}>
+                      <Typography variant='subtitle2'>Playstore</Typography>
+                    </Link>
+                  }
+                </Stack>
+              </TableCell>
+              <TableCell><Box component={'img'} className='app-icon' src={`/icons/color/${app.file}.png`}/></TableCell>
+              <TableCell><Box component={'img'} className='app-icon' src={`/icons/${darkTheme ? 'dark' : 'light'}/${app.file}.png`}/></TableCell>
             </TableRow>
           ))}
         </TableBody>
