@@ -1,12 +1,14 @@
 import React from 'react';
-import Switch from '@mui/material/Switch';
+import { IconButton } from '@mui/material';
+import { DarkModeRounded, LightModeRounded } from '@mui/icons-material';
 
-export default function ThemeSwitch({darkThemeEnabled, onThemeChanged}) {
+export default function ThemeSwitch(props) {
   return (
-    <Switch
-      checked={darkThemeEnabled}
-      onChange={onThemeChanged}
-      inputProps={{ 'aria-label': 'controlled' }}
-    />
+    <IconButton 
+      size="large" 
+      onClick={props.onClick}
+    >
+      {props.darkThemeEnabled ? <LightModeRounded/> : <DarkModeRounded/>}
+    </IconButton>
   );
 }

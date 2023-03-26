@@ -40,7 +40,7 @@
 .container {
   padding-top: 80px;
   padding-bottom: 60px;
-  background-color: #f2faff;
+  background-color: #fbfdf8;
 }
 
 .icon {
@@ -71,10 +71,10 @@
 
 .footer {
   padding: 50px;
-  background-color: #f2faff;
+  background-color: #fbfdf8;
 }
 
 .app-icon {
-  width: 80px; 
-  height: 80px;
+  width: 72px; 
+  height: 72px;
 }
