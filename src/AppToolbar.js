@@ -45,7 +45,7 @@ export default function AppToolbar(props) {
                     </Typography>
                     <Stack direction='row'>
                         <Button 
-                            href='https://github.com/material-you-icons/material-you-icons.github.io/issues/new?template=icon_suggestion.md'
+                            href='https://github.com/material-you-icons/material-you-icons.github.io/issues/new?title=Icon+Suggestion&body=Thanks!+Please+provide+App+name+and+Playstore+link'
                             target='_blank'
                             sx = {{ textTransform: 'capitalize' }}
                         >
