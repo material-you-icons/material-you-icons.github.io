@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import ThemeSwitch from './ThemeSwitch';
 import { fontSize } from '@mui/system';
+import AppSearchBar from './AppSearchBar';
 
 function ElevationScroll(props) {
     const trigger = useScrollTrigger({
